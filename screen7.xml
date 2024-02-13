@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Screen7Activity"
+    android:id="@+id/frame_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:background="#C1DBDF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/Hello1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:text="Hello,"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/Ali1"
+                android:layout_toRightOf="@+id/Hello1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Ali"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/NotificationsIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="40dp"
+                android:layout_toEndOf="@+id/Ali1"
+                android:contentDescription="Notification Icon"
+                android:src="@drawable/notifications" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/msg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:text="Ready for mentorship? Let’s begin the journey!"
+                android:textColor="#2196F3"
+                android:textSize="16dp" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#2196F3"
+                android:text="All"
+                android:textSize="10dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/btn1"
+                android:backgroundTint="#7FBCEC"
+                android:text="Education"
+                android:textColor="#245550"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_toRightOf="@id/btn2"
+                android:layout_width="122dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#7FBCEC"
+                android:text="Entrepreneurship"
+                android:textStyle="bold"
+                android:textSize="9dp"
+                android:textColor="#245550" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_toRightOf="@id/btn3"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#7FBCEC"
+                android:text="Personal Growth"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#245550" />
+            <Button
+                android:id="@+id/btn5"
+                android:layout_toRightOf="@id/btn4"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#7FBCEC"
+                android:text="Career"
+                android:textStyle="bold"
+                android:textSize="10dp"
+                android:textColor="#245550" />
+        </RelativeLayout>
+        </HorizontalScrollView>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/msg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Top Mentors for you"
+                android:textColor="#2196F3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/msg2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="View All"
+                android:textColor="#2196F3"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="150dp">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:id="@+id/JohnCooperBox"
+                android:background="#C3BDBD"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="210dp"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="75dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rel1"
+                        android:background="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="110dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:id="@+id/lin2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="John Cooper"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/lin3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lin2"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="UX Designer @ Google"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/lin3"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:id="@+id/circle1"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="1"
+                                app:tint="#41AC46"
+                                android:src="@drawable/circle_background"
+                                />
+                            <TextView
+                                android:id="@+id/lin4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lin3"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:text="Available"
+                                android:textStyle="bold"
+                                android:textColor="#41AC46"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/Rel1"
+                        android:background="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp">
+
+                        <TextView
+                            android:id="@+id/rate3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="$1500/Session"
+                            android:textColor="#AA9B0B"
+                            android:textSize="8dp" />
+
+
+                        <ImageView
+                            android:layout_below="@id/rate3"
+                            android:id="@+id/fav1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            app:tint="#D5372C"
+                            android:src="@drawable/favorite"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#C3BDBD"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="230dp"
+                android:layout_width="210dp"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="75dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rell1"
+                        android:background="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="110dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:id="@+id/linn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Martina Watson"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/linn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linn2"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Lead - Technology Officer"
+                            android:textColor="@color/black"
+                            android:textSize="9dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/linn3"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:id="@+id/circle11"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="1"
+                                app:tint="#C3BDBD"
+                                android:src="@drawable/circle_background"
+                                />
+                            <TextView
+                                android:id="@+id/linn4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/linn3"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:text="Not Available"
+                                android:textStyle="bold"
+                                android:textColor="#C3BDBD"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/Rell1"
+                        android:background="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp">
+
+                        <TextView
+                            android:id="@+id/ratee3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="$500/Session"
+                            android:textColor="#AA9B0B"
+                            android:textSize="7dp" />
+
+
+                        <ImageView
+                            android:layout_below="@id/ratee3"
+                            android:id="@+id/fav11"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            app:tint="#D5372C"
+                            android:src="@drawable/favorite"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#C3BDBD"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="450dp"
+                android:layout_width="210dp"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="75dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rell2"
+                        android:background="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="110dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:id="@+id/linn22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Emma"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/linn33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/linn22"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Lead - Technology Officer"
+                            android:textColor="@color/black"
+                            android:textSize="9dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/linn33"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:id="@+id/circle111"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="1"
+                                app:tint="#C3BDBD"
+                                android:src="@drawable/circle_background"
+                                />
+                            <TextView
+                                android:id="@+id/linn44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/linn33"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:text="Not Available"
+                                android:textStyle="bold"
+                                android:textColor="#C3BDBD"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/Rell2"
+                        android:background="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp">
+
+                        <TextView
+                            android:id="@+id/ratee33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="$500/Session"
+                            android:textColor="#AA9B0B"
+                            android:textSize="7dp" />
+
+
+                        <ImageView
+                            android:layout_below="@id/ratee33"
+                            android:id="@+id/fav111"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            app:tint="#D5372C"
+                            android:src="@drawable/favorite"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+       </HorizontalScrollView>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/msg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Education Mentors"
+                android:textColor="#2196F3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/msg3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="View All"
+                android:textColor="#2196F3"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="150dp">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <RelativeLayout
+                android:background="#C3BDBD"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="210dp"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="75dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rl1"
+                        android:background="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="110dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:id="@+id/ln2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Michael Drake"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/ln3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ln2"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="NLP Expert"
+                            android:textColor="@color/black"
+                            android:textSize="10dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/ln3"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:id="@+id/circle12"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="1"
+                                app:tint="#41AC46"
+                                android:src="@drawable/circle_background"
+                                />
+                            <TextView
+                                android:id="@+id/ln4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ln3"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:text="Available"
+                                android:textStyle="bold"
+                                android:textColor="#41AC46"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/Rl1"
+                        android:background="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp">
+
+                        <TextView
+                            android:id="@+id/rat3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="$900/Session"
+                            android:textColor="#AA9B0B"
+                            android:textSize="10dp" />
+
+
+                        <ImageView
+                            android:layout_below="@id/rat3"
+                            android:id="@+id/fv1"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            app:tint="#D5372C"
+                            android:src="@drawable/favorite"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:background="#C3BDBD"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="230dp"
+                android:layout_width="210dp"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="75dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rl12"
+                        android:background="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="110dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:id="@+id/lnn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Alex"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/lnn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lnn2"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Android Developer"
+                            android:textColor="@color/black"
+                            android:textSize="9dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/lnn3"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:id="@+id/circle13"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="1"
+                                app:tint="#C3BDBD"
+                                android:src="@drawable/circle_background"
+                                />
+                            <TextView
+                                android:id="@+id/lnn4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lnn3"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:text="Not Available"
+                                android:textStyle="bold"
+                                android:textColor="#C3BDBD"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/Rl12"
+                        android:background="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp">
+
+                        <TextView
+                            android:id="@+id/rat4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="$200/Session"
+                            android:textColor="#AA9B0B"
+                            android:textSize="7dp" />
+
+
+                        <ImageView
+                            android:layout_below="@id/rat4"
+                            android:id="@+id/fv13"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            app:tint="#D5372C"
+                            android:src="@drawable/favorite"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:background="#C3BDBD"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="450dp"
+                android:layout_width="210dp"
+                android:layout_height="130dp">
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="75dp">
+
+                    <RelativeLayout
+                        android:id="@+id/Rl123"
+                        android:background="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="110dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:id="@+id/lnn22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Jane"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <TextView
+                            android:id="@+id/lnn33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lnn22"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="Software Engineer"
+                            android:textColor="@color/black"
+                            android:textSize="9dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/lnn33"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:id="@+id/circle133"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="0dp"
+                                android:layout_weight="1"
+                                app:tint="#C3BDBD"
+                                android:src="@drawable/circle_background"
+                                />
+                            <TextView
+                                android:id="@+id/lnn44"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lnn33"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:text="Not Available"
+                                android:textStyle="bold"
+                                android:textColor="#C3BDBD"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/Rl123"
+                        android:background="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        android:layout_width="70dp"
+                        android:layout_height="90dp">
+
+                        <TextView
+                            android:id="@+id/rat44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="5dp"
+                            android:text="$200/Session"
+                            android:textColor="#AA9B0B"
+                            android:textSize="7dp" />
+
+
+                        <ImageView
+                            android:layout_below="@id/rat44"
+                            android:id="@+id/fv133"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_weight="1"
+                            app:tint="#D5372C"
+                            android:src="@drawable/favorite"
+                            />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+       </HorizontalScrollView>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <TextView
+                android:id="@+id/msg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:text="Recent Mentors"
+                android:textColor="#2196F3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_toRightOf="@id/msg4"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="View All"
+                android:textColor="#2196F3"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_marginTop="650dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemTextAppearanceInactive="@style/BottomNavigationView.InactiveText"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_navigation_menu"
+        />
+</FrameLayout>
